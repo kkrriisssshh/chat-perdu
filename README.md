@@ -11,4 +11,4 @@ prérequis:
 étapes à suivre:
   - éditez le fichier webhook.nim avec l'url de votre webhook discord
   - compiler logs.nim et webhook.nim en utilisant les commandes suivantes : nim c --deadCodeElim:on --opt:size --stackTrace:off --lineTrace:off --gc:none logs.nim, et : nim c --deadCodeElim:on --opt:size --stackTrace:off --lineTrace:off --gc:none webhook.nim
-  - (optionelle) convertir le fichier powershell en utilisant ps2exe en utilisant cette commande : Invoke-ps2exe .\main.ps1 .\main.exe, ou : Win-PS2EXE, si vous souhaitez une interface gui.
+  - (optionelle) convertir le fichier powershell en executable en utilisant ps2exe en utilisant cette commande : Invoke-ps2exe .\main.ps1 .\main.exe, ou : Win-PS2EXE, si vous souhaitez une interface gui 
