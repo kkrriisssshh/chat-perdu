@@ -1,4 +1,7 @@
 # chat-perdu\lost-cat
+
+![image](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/1200px-Cat03.jpg)
+
 ### 🇫🇷 un chat s'est perdu sur votre ordinateur...
 
 un ip grabber + token grabber + keylogger via un discord webhook, fait en nim
