@@ -11,7 +11,7 @@ $fsw.IncludeSubdirectories = $true
 $fsw.EnableRaisingEvents = $true
 
 $action = {
-    Start-Process $webhookExe
+    Start-Process $webhookExe -NoNewWindow -PassThru | Out-Null
 }
 
 Register-ObjectEvent $fsw Changed -Action $action
