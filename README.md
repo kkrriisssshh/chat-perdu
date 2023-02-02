@@ -1,6 +1,6 @@
 # chat-perdu\lost-cat
 
-![image](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/1200px-Cat03.jpg)
+![image](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/1200px-Cat03.jpg | width=50)
 
 ### 🇫🇷 un chat s'est perdu sur votre ordinateur...
 
