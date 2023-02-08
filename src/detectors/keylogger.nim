@@ -1,3 +1,11 @@
+#[
+    Authors: Marcello Salvati (@byt3bl33d3r), Scottie Austin (@checkymander) & Kiran Patel
+    License: BSD 3-Clause
+
+    References: 
+        - https://github.com/cobbr/SharpSploit/blob/2fdfc2eec891717884484bb7dde15f8a12113ad3/SharpSploit/Enumeration/Keylogger.cs
+]#
+
 import winim
 import tables
 import strformat

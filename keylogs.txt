@@ -1,1 +1,0 @@
-```key: f [window: 'C:\Projects\chat perdu\chat.exe']```
