@@ -1,7 +1,7 @@
 import sysinfo
 
 proc writeHardwareInfo() =
-    let hardwareFilePath = "src/output/hardware.txt"
+    let hardwareFile = "src/output/hardware.txt"
 
     let lines = ["model de machine: " & getMachineModel(),
             "nom de la machine: " & getMachineName(),
@@ -10,7 +10,7 @@ proc writeHardwareInfo() =
             "nom de la cpu: " & getCpuName(), "vitesse de la cpu: " &
             $getCpuGhz() & "GHz", "fabricant de la cpu: " & getCpuManufacturer()]
 
-    let f = open(hardwareFilePath, fmWrite)
+    let f = open(hardwareFile, fmWrite)
     defer: f.close()
 
     for line in lines:
