@@ -1,8 +1,0 @@
-model de machine: 81W1
-nom de la machine: ATLAS-24EOP5I6A
-fabricant de la machine: LENOVO
-nom de l'os: Microsoft Windows 10 Enterprise
-version de l'os: 10.0.19042
-nom de la cpu: AMD Ryzen 7 3700U with Radeon Vega Mobile Gfx
-vitesse de la cpu: 2.3GHz
-fabricant de la cpu: AuthenticAMD

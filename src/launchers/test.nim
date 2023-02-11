@@ -1,0 +1,1 @@
+echo "nim est installé sur cet ordinateur"

